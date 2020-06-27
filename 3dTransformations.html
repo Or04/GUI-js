@@ -14,29 +14,29 @@
 				<br>
 				<div class="block">
 					<label for="cast">Casting:</label>
-					<input id="castDiag" type="radio" name="cast" onchange="setCasting(CASTING.DIAGONAL)">Diagonal
-					<input id="castPara" type="radio" name="cast" checked="yes" onchange="setCasting(CASTING.PARALAL)">Parallal
-					<input id="castPers" type="radio" name="cast" onchange="setCasting(CASTING.PERSPECTIVE)">Perspective
+					<input id="castDiag" type="radio" name="cast" onchange="set_casting(CASTING.DIAGONAL)">Diagonal
+					<input id="castPara" type="radio" name="cast" checked="yes" onchange="set_casting(CASTING.PARALAL)">Parallal
+					<input id="castPers" type="radio" name="cast" onchange="set_casting(CASTING.PERSPECTIVE)">Perspective
 				</div>
 				<div class="block">
 					<label for="xAngle">Rotate X Axis:</label>
 					<input id="xAngle" type="range" value="0" min="-360" max="360">
-					<button onclick="setAngleValue(document.getElementById('xAngle'), ROTATE.X)">Rotate</button>
+					<button onclick="set_angle_value(document.getElementById('xAngle'), ROTATE.X)">Rotate</button>
 				</div>
 				<div class="block">
 					<label for="yAngle">Rotate Y Axis:</label>
 					<input id="yAngle" type="range" value="0" min="-360" max="360">
-					<button onclick="setAngleValue(document.getElementById('yAngle'), ROTATE.Y)">Rotate</button>
+					<button onclick="set_angle_value(document.getElementById('yAngle'), ROTATE.Y)">Rotate</button>
 				</div>
 				<div class="block">
 					<label for="zAngle">Rotate Z Axis:</label>
 					<input id="zAngle" type="range" value="0" min="-360" max="360">
-					<button onclick="setAngleValue(document.getElementById('zAngle'), ROTATE.Z)">Rotate</button>
+					<button onclick="set_angle_value(document.getElementById('zAngle'), ROTATE.Z)">Rotate</button>
 				</div>
 				<div class="block">
 					<label for="zoom">Zoom:</label>
 					<input id="zoom" type="range" value="100" min="1" max="200">
-					<button onclick="setZoomValue(document.getElementById('zoom'))">Zoom</button>
+					<button onclick="set_zoom_value(document.getElementById('zoom'))">Zoom</button>
 				</div>
 			</section>
 		</div>
